@@ -5,21 +5,7 @@
 	flex-wrap: wrap;
 	margin-top: 80px;
 	justify-content: center;
-	/* max-width: 800px; */
 }
-
-/* .lmj-plant-item {
-	border-radius: 10px;
-	height: 150px;
-	width: 150px;
-	margin: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	position: relative;
-	
-} */
 
 .lmj-sales {
 	position: absolute;
@@ -32,4 +18,10 @@
 }
 .container{
 	width: 80%;
+}
+
+.container-categories{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
 }

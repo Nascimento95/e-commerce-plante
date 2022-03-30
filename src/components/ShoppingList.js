@@ -32,6 +32,7 @@ function ShoppingList({cart, updateCart}) {
             }]) 
         }
     }
+
     const recupStateChildren = async (valueState) => {
         const categoriesSelected = await valueState
         if(categoriesSelected === "toutes les plantes"){
@@ -39,9 +40,8 @@ function ShoppingList({cart, updateCart}) {
         }else {
             setSelectedcategories(categoriesSelected)
         }
-        // console.log(valueState)
     }
-    console.log("mon state" , selectedcategories)
+
     return (    
         <div className='container'>
             <div className='container-categories'>

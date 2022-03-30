@@ -3,9 +3,7 @@ import "../styles/Cart.css"
 
 function Cart({cart, updateCart}) {
 
-    // const [cart, updateCart] = useState(0)
     const [isOpen, setIsOpen] = useState(false)
-
 
     const total = cart.reduce((acc, planteType) => acc + planteType.price * planteType.quantity,0)
 
@@ -18,9 +16,6 @@ function Cart({cart, updateCart}) {
                     {name} {price}€ x {quantity}
                 </div>
             )}
-            {/* <div>
-                monstera : {monsteraPrice}€
-            </div> */}
             <p>
                 Total : {total}€  
             </p>
