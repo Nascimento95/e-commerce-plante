@@ -18,7 +18,7 @@ function ShoppingList({cart, updateCart}) {
         const checkPlantAdd = cart.find((plante) => plante.name === name)
         if(checkPlantAdd) {
             const filterPlantCart = cart.filter((plant) => plant.name !== name)
-            console.log("mon filter",filterPlantCart)
+            // console.log("mon filter",filterPlantCart)
             updateCart([...filterPlantCart, {
                 name,
                 price,
